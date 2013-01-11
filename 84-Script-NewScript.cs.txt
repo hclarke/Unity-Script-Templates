@@ -1,0 +1,15 @@
+﻿using UnityEngine;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using System.Linq;
+
+public class #SCRIPTNAME# : ScriptBase {
+    
+}
+
+public partial class ScriptBase {
+    public #SCRIPTNAME# #SCRIPTNAME# {
+        get { return GetComponent<#SCRIPTNAME#>(); }
+    }
+}

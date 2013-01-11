@@ -1,0 +1,23 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using System;
+using System.Linq;
+
+public class #SCRIPTNAME# : ScriptBase {
+
+    public static #SCRIPTNAME# Instance { get; private set; }
+
+    void Awake() {
+        if (Instance) {
+            Debug.LogError("there are two #SCRIPTNAME# instances");
+        }
+        Instance = this;
+    }
+}
+
+public partial class ScriptBase {
+    public static #SCRIPTNAME# #SCRIPTNAME# {
+        get { return #SCRIPTNAME#.Instance; }
+    }
+}
